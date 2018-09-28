@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp"
-    android:background="#FFF">
+    android:background="#FFF"
+    android:orientation="vertical">
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/gradientviewtopbar">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView7"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--app:srcCompat="@drawable/logoudema" />-->
+    <!--</RelativeLayout>-->
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:src="@drawable/udema"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/udema" />
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFF"
@@ -20,98 +42,76 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <android.support.design.widget.TextInputLayout
+        <EditText
+            android:id="@+id/firstName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="Your First Name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:textColorHint="@color/darkgray" />
 
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/firstName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Your First Name"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColorHint="@color/darkgray"
-                android:textColor="@android:color/black" />
 
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
+        <EditText
+            android:id="@+id/lastName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="Your Last Name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/darkgray" />
 
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/lastName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Your Last Name"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColorHint="@color/darkgray"
-                android:textColor="@android:color/black" />
 
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
+        <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/darkgray" />
 
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Your Email"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColorHint="@color/darkgray"
-                android:textColor="@android:color/black" />
 
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
+        <EditText
+            android:id="@+id/password1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--android:imeActionId="@+id/login"-->
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/password1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:focusableInTouchMode="true"
-                android:hint="Your Password"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColorHint="@color/darkgray"
-                android:textColor="@android:color/black" />
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Your Password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/darkgray" />
 
-        </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <EditText
+            android:id="@+id/password2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--android:imeActionId="@+id/login"-->
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/password2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:focusableInTouchMode="true"
-                android:hint="Confirm Password"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColorHint="@color/darkgray"
-                android:textColor="@android:color/black" />
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Confirm Password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/darkgray" />
 
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.v7.widget.AppCompatButton
+        <Button
             android:id="@+id/sign_up_button"
-            style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -163,7 +163,7 @@
 
 
 
-    </android.support.v7.widget.LinearLayoutCompat>
+    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -173,4 +173,4 @@
         android:layout_marginBottom="20dp"
         android:visibility="gone" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
