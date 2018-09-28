@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_sign_up">SignUp</string>
+</resources>

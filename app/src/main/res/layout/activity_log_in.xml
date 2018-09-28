@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:src="@drawable/udema"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/darkgray"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Your email"
+                android:textColorHint="@color/darkgray"
+                android:textColor="#000"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:textColorHint="@color/darkgray"
+                android:textColor="#000"
+                android:hint="Your password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+
+            android:id="@+id/forgotpass"
+            android:text="Forgot Password?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:paddingLeft="2dp"
+            android:background="@null"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:text="Login to interzo"
+            android:id="@+id/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#FFFF"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="false"
+            android:background="@drawable/mybutton" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:layout_height="20dp"
+                android:text="New to Interzo?"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingRight="4dp"
+                android:textColor="@color/darkgray"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/signUp"
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:gravity="left"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
