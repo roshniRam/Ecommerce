@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -29,9 +30,10 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class LogIn extends AppCompatActivity {
 
     EditText loginEmail,loginPassword;
-    Button loginButton,signUp,newPassButton;
+    Button loginButton;
+    TextView newPassButton,signUp;
     private static final int RC_SIGN_IN = 9001;
-    private SignInButton signInButton;
+    private Button signInButton;
     FirebaseAuth firebaseAuth;
     GoogleApiClient mGoogleApiClient;
     private GoogleSignInClient mGoogleSignInClient;
@@ -53,9 +55,9 @@ public class LogIn extends AppCompatActivity {
         loginEmail = (EditText) findViewById(R.id.email);
         loginPassword = (EditText) findViewById(R.id.password);
         loginButton = (Button) findViewById(R.id.loginButton);
-        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
-        newPassButton = (Button) findViewById(R.id.forgotpass);
-        signUp = (Button) findViewById(R.id.signUp);
+        signInButton = (Button) findViewById(R.id.sign_in_button);
+        newPassButton = (TextView) findViewById(R.id.forgotpass);
+        signUp = (TextView) findViewById(R.id.signUp);
 
 
 

@@ -2,4 +2,14 @@
     <string name="app_name">Ecommerce</string>
     <string name="title_activity_reset_password">ResetPasswordActivity</string>
     <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GET STARTED</string>
+
+    <string name="slide_1_title">Hello World!</string>
+    <string name="slide_1_desc">Now order flowers for pooja!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
 </resources>
