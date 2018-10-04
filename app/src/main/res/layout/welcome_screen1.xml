@@ -14,15 +14,16 @@
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/ic_discount" />
+            android:src="@drawable/icons_flower"
+            android:backgroundTint="@color/darkgray"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/slide_1_title"
-            android:textColor="#FFFe"
             android:fontFamily="@font/poppins"
             android:textSize="@dimen/slide_title"
+            android:textColor="#000"
             android:textStyle="bold" />
 
         <TextView
@@ -33,8 +34,8 @@
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/slide_1_desc"
             android:textAlignment="center"
-            android:textColor="#FFF"
             android:fontFamily="@font/poppins"
+            android:textColor="#000"
             android:textSize="@dimen/slide_desc" />
     </LinearLayout>
 

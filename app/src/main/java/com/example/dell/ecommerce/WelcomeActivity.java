@@ -54,17 +54,20 @@ public class WelcomeActivity extends AppCompatActivity {
 
         // layouts of all welcome sliders
         // add few more layouts if you want
+//        layouts = new int[]{
+//                R.layout.welcome_screen1,
+//                R.layout.welcome_screen2,
+//                R.layout.welcome_screen3,
+//                R.layout.welcome_screen4};
+
         layouts = new int[]{
                 R.layout.welcome_screen1,
-                R.layout.welcome_screen2,
-                R.layout.welcome_screen3,
-                R.layout.welcome_screen4};
+                R.layout.welcome_screen1,
+                R.layout.welcome_screen1,
+                R.layout.welcome_screen1};
 
         // adding bottom dots
         addBottomDots(0);
-
-        // making notification bar transparent
-        changeStatusBarColor();
 
         myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.setAdapter(myViewPagerAdapter);

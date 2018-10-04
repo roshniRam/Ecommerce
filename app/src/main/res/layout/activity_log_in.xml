@@ -91,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:text="Login with Google"
+                android:textAllCaps="false"
                 android:textColor="#FFF"
                 android:background="@null"
                 android:textSize="16sp"
@@ -197,7 +198,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="0dp"
                 android:text="Forgot Password?"
-                android:textColor="#4abc01"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:fontFamily="@font/poppins"/>
         </RelativeLayout>

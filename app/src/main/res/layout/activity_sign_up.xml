@@ -52,7 +52,8 @@
             android:singleLine="true"
             android:layout_marginTop="15dp"
             android:textColor="#000"
-            android:textColorHint="@color/darkgray" />
+            android:textColorHint="@color/darkgray"
+            android:backgroundTint="@color/colorPrimary"/>
 
 
         <EditText
@@ -65,7 +66,8 @@
             android:singleLine="true"
             android:textColor="#000"
             android:layout_marginTop="15dp"
-            android:textColorHint="@color/darkgray" />
+            android:textColorHint="@color/darkgray"
+            android:backgroundTint="@color/colorPrimary"/>
 
 
         <EditText
@@ -78,7 +80,8 @@
             android:singleLine="true"
             android:textColor="#000"
             android:layout_marginTop="15dp"
-            android:textColorHint="@color/darkgray" />
+            android:textColorHint="@color/darkgray"
+            android:backgroundTint="@color/colorPrimary"/>
 
 
         <EditText
@@ -93,7 +96,8 @@
             android:singleLine="true"
             android:textColor="#000"
             android:layout_marginTop="15dp"
-            android:textColorHint="@color/darkgray" />
+            android:textColorHint="@color/darkgray"
+            android:backgroundTint="@color/colorPrimary"/>
 
 
         <EditText
@@ -108,7 +112,8 @@
             android:singleLine="true"
             android:textColor="#000"
             android:layout_marginTop="15dp"
-            android:textColorHint="@color/darkgray" />
+            android:textColorHint="@color/darkgray"
+            android:backgroundTint="@color/colorPrimary"/>
 
         <Button
             android:id="@+id/sign_up_button"

@@ -47,26 +47,18 @@ public class LogIn extends AppCompatActivity {
 
 
         if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(LogIn.this, MainActivity.class));
+            startActivity(new Intent(LogIn.this, DrawerLayout.class));
             finish();
         }
 
 
-        loginEmail = (EditText) findViewById(R.id.email);
-        loginPassword = (EditText) findViewById(R.id.password);
-        loginButton = (Button) findViewById(R.id.loginButton);
-        signInButton = (Button) findViewById(R.id.sign_in_button);
-        newPassButton = (TextView) findViewById(R.id.forgotpass);
-        signUp = (TextView) findViewById(R.id.signUp);
+        loginEmail =  findViewById(R.id.email);
+        loginPassword = findViewById(R.id.password);
+        loginButton = findViewById(R.id.loginButton);
+        signInButton = findViewById(R.id.sign_in_button);
+        newPassButton = findViewById(R.id.forgotpass);
+        signUp = findViewById(R.id.signUp);
 
-
-
-        signInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LogIn.this, SignUp.class));
-            }
-        });
 
         newPassButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,7 +100,7 @@ public class LogIn extends AppCompatActivity {
                                         Toast.makeText(LogIn.this,("Authentication failed"), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Intent intent = new Intent(LogIn.this, MainActivity.class);
+                                    Intent intent = new Intent(LogIn.this, DrawerLayout.class);
                                     startActivity(intent);
                                     finish();
                                 }
@@ -154,9 +146,6 @@ public class LogIn extends AppCompatActivity {
             }
         });
 
-        if(firebaseAuth.getCurrentUser()!=null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-        }
     }
 
     @Override
@@ -194,7 +183,7 @@ public class LogIn extends AppCompatActivity {
                             Log.d("Msg", "signInWithCredential:success");
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             Toast.makeText(LogIn.this,"Log in successful",Toast.LENGTH_LONG).show();;
-                            startActivity(new Intent(LogIn.this,MainActivity.class));
+                            startActivity(new Intent(LogIn.this,DrawerLayout.class));
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("Msh", "signInWithCredential:failure", task.getException());
